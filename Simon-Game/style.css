@@ -1,0 +1,128 @@
+body {
+    background-color: rgba(100,200,100,.8);
+    user-select: none;
+}
+.container {
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.wrap {
+    position: relative;
+    margin-top: 100px;
+    padding: 0px;
+    width: 340px;
+    height: 340px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: #222;
+    border-radius: 50%;
+}
+.c1, .c2, .c3, .c4 {
+    width: 150px;
+    height: 150px;
+}
+.c1 {
+    margin: 15px 5px 0 0;
+    border-radius: 150px 0 0 0; 
+    background-color: rgba(0,255,0,.5);
+}
+.c2 {
+    margin: 15px 0 0 5px;
+    border-radius: 0 150px 0 0; 
+    background-color: rgba(255,0,0,.5);
+}
+.c3 {
+    margin: 0 5px 5px 0;
+    border-radius: 0 0 0 150px; 
+    background-color: rgba(255,255,0,.5);
+}
+.c4 {
+    margin: 0 0 5px 5px;
+    border-radius: 0 0 150px 0; 
+    background-color: rgba(0,0,255,.5);
+}
+.inner {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 240px;
+    height: 240px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #222;
+}
+.core {
+    margin-top: 10px;
+    width: 220px;
+    height: 220px;
+    background-color: orange;
+    border-radius: 50%;
+    text-align: center;
+}
+.core-operator {
+    margin-bottom: 10px;
+}
+.core-operator div {
+    display: inline-block;
+}
+.count {
+    margin: 7px;
+    width: 50px;
+    height: 30px;
+    background-color: #000;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    margin: 10px 10px;
+}
+h5 {
+    margin: 0px;
+    padding: 0px;
+}
+.strict {
+    position: relative;
+}
+.indicator-light {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.core-switch {
+    position: relative;
+    margin: 15px 0 0 60px;
+    width: 100px;
+    height: 25px;
+    background-color: #ccc;
+}
+.switch {
+    position: absolute;
+    width: 50px;
+    height: 23px;
+    background-color: #333;
+    border: 2px solid #999;
+    box-shadow: 2px 2px 2px #000;
+    color: #ddd;
+}
