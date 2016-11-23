@@ -1,0 +1,152 @@
+body {
+    background-color: rgba(250,150,80,.8);
+}
+button {
+    outline: none;
+}
+.box {
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.star {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 30px;
+    width: 100px;
+    height: 300px;
+    background-color: rgba(100,150,10,.5);
+    box-shadow: 3px 3px 5px rgba(0,0,0,.7);
+}
+.imgs {
+    width: 30px;
+    height: 30px;
+}
+/* 设置区 */
+h1 {
+    margin: 10px;
+    font-weight: 400;
+}
+h3 {
+    margin: 20px;
+    font-weight: 100;
+}
+.set {
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+}
+.time {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.time div {
+    margin: 0 10px;
+}
+.time div span{
+    margin: 40px;
+}
+.time button {
+    margin: 0px;
+    width: 25px;
+    background: rgba(0,0,0,.2);
+    border: none;
+    box-shadow: 1px 1px 2px #000;
+}
+/* 显示区--计时球 */
+.circle {
+    margin-top: 30px;
+    width: 304px;
+    height: 304px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+@media screen and (min-width: 640px) {
+    .circle {
+        margin-top: 100px;
+    }
+}
+#btn {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(250,150,80,0);
+    border-radius: 50%;
+    font-size: 50px;
+    z-index: 1;
+    background: rgba(250,150,80,0);
+}
+#btn > span {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.div1 {
+    position: absolute;
+    width: 296px;
+    height: 296px;
+    z-index: -1;
+    -webkit-animation: animatedBackground1 60s linear;
+    background: green;
+}
+.div2 {
+    position: absolute;
+    width: 296px;
+    height: 296px;
+    z-index: -1;
+    -webkit-animation: animatedBackground2 60s linear;
+    background: red;
+}
+@-webkit-keyframes animatedBackground1 
+{
+    0% {
+        bottom: -296px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+@-webkit-keyframes animatedBackground2
+{
+    0% {
+        bottom: -296px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+/* 弹窗 */
+.alert {
+    position: fixed;
+    top: 0px;
+    padding: 300px;         
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    color: rgba(200,200,100,.8);
+    text-align: center;
+    font-size: 70px;
+    line-height: 70px;
+    z-index: 3;
+}
