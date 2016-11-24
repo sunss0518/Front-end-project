@@ -15,7 +15,7 @@ h1 {
 h2 {
     font-weight: 100;
 }
-#wrap {
+#container {
     margin: 0px;
     padding: 0px;
     display: -webkit-flex;
@@ -23,7 +23,7 @@ h2 {
     -webkit-justify-content: center;
     justify-content: center;
 }
-#container {
+#wrap {
     position: relative;
     margin-top: 100px;
     padding: 0px;
@@ -37,7 +37,7 @@ h2 {
     border-radius: 10px;
     color: white;
 }
-#box1, #box2, #box3 {
+#box1, #box2-1, #box2-2, #box3, #box4, #box5, #box6 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -58,13 +58,15 @@ h2 {
     -webkit-flex-flow: column;
     flex-direction: column;
 }
-#box1, #box3 { 
-    z-index: -1;
-}
 #box3 div {
     width: 98px;
     height: 98px;
     margin: 0px;
     padding: 0px;
     border: 1px solid orange;
+    line-height: 98px;
+    font-size: 80px;
+}
+#top {
+    z-index: -1;
 }
