@@ -4,10 +4,25 @@
     <meta charset="utf-8">
     <title>The Tic Tac Toe Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="../jquery-3.1.1.slim.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <div id='wrap'>
-        <div id="container">
+    <div id="container">
+        <div id="wrap">
+            <div id='box6'>
+                <div><h1>It is a draw</h1></div>
+            </div>
+            <div id='box5'>
+                <div><h1>You Lost</h1></div>
+            </div>
+            <div id='box4'>
+                <div><h1>You Win</h1></div>
+            </div>
+            <div id='top'>
+                <button id='reset'>Reset All</button>
+            </div>
             <div id="box3">
                 <div id="1"></div>
                 <div id="2"></div>
@@ -19,17 +34,31 @@
                 <div id="8"></div>
                 <div id="9"></div>
             </div>
-            <div id="box2">
+            <div id="box2-2">
+                <div>
+                    <h2>Player 1 : Would you like X or O?</h2>
+                </div>
+                <button class="go-third-page x" type="button">
+                    <h1>X</h1>
+                </button>
+                <button class="go-third-page o" type="button">
+                    <h1>O</h1>
+                </button>
+                <button class="back-first-page" type="button">
+                    <h2>Back</h2>
+                </button>
+            </div>
+            <div id="box2-1">
                 <div>
                     <h1>Would you like to be X or O?</h1>
                 </div>
-                <button type="button">
+                <button class="go-third-page x" type="button">
                     <h1>X</h1>
                 </button>
-                <button type="button">
+                <button class="go-third-page o" type="button">
                     <h1>O</h1>
                 </button>
-                <button type="button">
+                <button class="back-first-page" type="button">
                     <h2>Back</h2>
                 </button>
             </div>
@@ -37,10 +66,10 @@
                 <div>
                     <h1>How do you want to play?</h1>
                 </div>
-                <button type="button">
+                <button id="onePlayer" type="button">
                     <h2>One Player</h2>
                 </button>
-                <button type="button">
+                <button id="twoPlayer" type="button">
                     <h2>Two Player</h2>
                 </button>
             </div>
